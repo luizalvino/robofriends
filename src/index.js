@@ -9,6 +9,7 @@ import App from "./containers/App";
 import "./index.css";
 import { searchRobots, requestRobots } from "./reducers";
 import reportWebVitals from "./reportWebVitals";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 const logger = createLogger();
 const rootReducer = combineReducers({ searchRobots, requestRobots });
@@ -20,5 +21,7 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
+
+serviceWorkerRegistration.register();
 
 reportWebVitals();
