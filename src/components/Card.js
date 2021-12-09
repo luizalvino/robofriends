@@ -5,8 +5,8 @@ const Card = ({ id, name, email }) => {
     <div key={id} className="bg-light-green dib br3 pa3 ma2 grow shadow-5">
       <img
         alt="robots"
-        src={`https://robohash.org/${id}?size=200x200`}
-        srcSet={`https://robohash.org/${id}?size=200x200 200w, https://robohash.org/${id}?size=400x400 1080w`}
+        src={`https://res.cloudinary.com/luizalvino/image/upload/h_200,w_200/robohash/${id}.webp`}
+        srcSet={`https://res.cloudinary.com/luizalvino/image/upload/h_200,w_200/robohash/${id}.webp 200w, https://res.cloudinary.com/luizalvino/image/upload/h_400,w_400/robohash/${id}.webp 1080w`}
         width="200"
         height="200"
       />
