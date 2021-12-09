@@ -23,7 +23,7 @@ const App = () => {
     dispatch(setSearchField(event.target.value));
 
   useEffect(() => {
-    import("tachyons");
+    // import("tachyons");
     import("./App.css");
   }, []);
 
